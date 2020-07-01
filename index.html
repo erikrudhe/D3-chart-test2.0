@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stacked bar chart</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <style>
+
+    </style>
+    
+    <body>
+        <div class="checkBoxes">
+            
+                <input type="checkbox" onchange="handleChange(this,'sökandeMan')" name="SökandeMan"    rel="sökandeMan"    value="sökandeMan"   id="sökandeMan" checked>Sökande (Man) &emsp;&emsp;  
+                <input type="checkbox" onchange="handleChange(this,'antagnaMan')" name="ExamenMan"     rel="examenMan"     value="examenMan"    id="examenMan" checked>Antagna (Man) &emsp;&emsp;
+                <input type="checkbox" onchange="handleChange(this,'examenMan')" name="AntagnaKvinna" rel="antagnaKvinna" value="antagnaKvinna"id="antagnaKvinna" checked>Examen (Man) <br>
+                <input type="checkbox" onchange="handleChange(this,'sökandeKvinna')" name="AntagnaMan"    rel="antagnaMan"    value="antagnaMan"   id="antagnaMan" checked>Sökande (Kvinna)&emsp; 
+                <input type="checkbox" onchange="handleChange(this,'antagnaKvinna')" name="SökandeKvinna" rel="sökandeKvinna" value="sökandeKvinna"id="sökandeKvinna" checked>Antagna (Kvinna)&emsp; 
+                <input type="checkbox" onchange="handleChange(this,'examenKvinna')" name="ExamenKvinna"  rel="examenKvinna"  value="examenKvinna" id="examenKvinna" checked>Examen (Kvinna)  
+
+        </div>
+        <!-- <div id="chart1" style="display: block;"> -->
+            
+            <h3>Civilingenjör i Medieteknik Linköpings Universitet</h3>
+        <svg id="chart" width="820" height="500"></svg>
+
+            
+      
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="barChart.js"></script>
+</html>
