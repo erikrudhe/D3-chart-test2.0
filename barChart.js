@@ -283,7 +283,17 @@ function plotChart(data, keys, speed) {
         .attr("font-family", "sans-serif")
         .style("fill", "steelblue")
         .attr("font-size", "12px")
-        .attr("font-weight", "bold")    
+        .attr("font-weight", "bold")
+        
+        
+      var title = chart1.append("g")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 16)
+      .attr("text-anchor", "middle")
+      .append("text")
+      .text("Civilingenjör Medieteknik Linköpings Universitet")
+      .attr("x", width -20)
+      .attr("y", 5);
         
 
 }
