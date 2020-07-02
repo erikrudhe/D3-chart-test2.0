@@ -206,7 +206,7 @@ function plotChart(data, keys, speed) {
                 tooltip.select(".secondLine").text("Män: " + d.data.examenMan + ", " + (Math.round(100 / (d.data.examenMan + d.data.examenKvinna) * d.data.examenMan)) +"%" )
             }else{
                 tooltip.select("text").text("Totalt examen: " + ((d.data.examenKvinna) + (d.data.examenMan)))
-                tooltip.select(".secondLine").text("Kvinor: " + d.data.examenKvinna + ", " + (Math.round(100 / (d.data.examenKvinna + d.data.examenKvinna) * d.data.examenKvinna)) +"%" )
+                tooltip.select(".secondLine").text("Kvinor: " + d.data.examenKvinna + ", " + (Math.round(100 / (d.data.examenKvinna + d.data.examenMan) * d.data.examenKvinna)) +"%" )
             }
         })
         .merge(bars)
