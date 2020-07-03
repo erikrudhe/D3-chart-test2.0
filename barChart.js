@@ -191,22 +191,22 @@ function plotChart(data, keys, speed) {
             tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
             if(d.id === 1){
                 tooltip.select("text").text("Totalt sökande: " + ((d.data.sökandeMan) + (d.data.sökandeKvinna)))
-                tooltip.select(".secondLine").text("Män: " + d.data.sökandeMan + ", " + (Math.round(100 / (d.data.sökandeMan + d.data.sökandeKvinna) * d.data.sökandeMan)) +"%" )
+                tooltip.select(".secondLine").text("Män: " + d.data.sökandeMan + " st" + ", " + (Math.round(100 / (d.data.sökandeMan + d.data.sökandeKvinna) * d.data.sökandeMan)) +"%" )
             }else if(d.id === 2) {
                 tooltip.select("text").text("Totalt sökande: " + ((d.data.sökandeKvinna) + (d.data.sökandeMan)))
-                tooltip.select(".secondLine").text("Kvinnor: " + d.data.sökandeKvinna + ", " + (Math.round(100 / (d.data.sökandeKvinna + d.data.sökandeMan) * d.data.sökandeKvinna)) +"%" )
+                tooltip.select(".secondLine").text("Kvinnor: " + d.data.sökandeKvinna + " st" + ", " + (Math.round(100 / (d.data.sökandeKvinna + d.data.sökandeMan) * d.data.sökandeKvinna)) +"%" )
             }else if(d.id === 3) {
                 tooltip.select("text").text("Totalt antagna: " + ((d.data.antagnaMan) + (d.data.antagnaKvinna)))
-                tooltip.select(".secondLine").text("Män: " + d.data.antagnaMan + ", " + (Math.round(100 / (d.data.antagnaMan + d.data.antagnaKvinna) * d.data.antagnaMan)) +"%" )
+                tooltip.select(".secondLine").text("Män: " + d.data.antagnaMan + " st" + ", " + (Math.round(100 / (d.data.antagnaMan + d.data.antagnaKvinna) * d.data.antagnaMan)) +"%" )
             }else if(d.id === 4) {
                 tooltip.select("text").text("Totalt antagna: " + ((d.data.antagnaMan) + (d.data.antagnaKvinna)))
-                tooltip.select(".secondLine").text("Kvinnor: " + d.data.antagnaKvinna + ", " + (Math.round(100 / (d.data.antagnaKvinna + d.data.antagnaMan) * d.data.antagnaKvinna)) +"%" )
+                tooltip.select(".secondLine").text("Kvinnor: " + d.data.antagnaKvinna + " st"+ ", " + (Math.round(100 / (d.data.antagnaKvinna + d.data.antagnaMan) * d.data.antagnaKvinna)) +"%" )
             }else if(d.id === 5) {
                 tooltip.select("text").text("Totalt examen: " + ((d.data.examenKvinna) + (d.data.examenMan)))
-                tooltip.select(".secondLine").text("Män: " + d.data.examenMan + ", " + (Math.round(100 / (d.data.examenMan + d.data.examenKvinna) * d.data.examenMan)) +"%" )
+                tooltip.select(".secondLine").text("Män: " + d.data.examenMan + " st"+ ", " + (Math.round(100 / (d.data.examenMan + d.data.examenKvinna) * d.data.examenMan)) +"%" )
             }else{
                 tooltip.select("text").text("Totalt examen: " + ((d.data.examenKvinna) + (d.data.examenMan)))
-                tooltip.select(".secondLine").text("Kvinor: " + d.data.examenKvinna + ", " + (Math.round(100 / (d.data.examenKvinna + d.data.examenMan) * d.data.examenKvinna)) +"%" )
+                tooltip.select(".secondLine").text("Kvinor: " + d.data.examenKvinna + " st"+ ", " + (Math.round(100 / (d.data.examenKvinna + d.data.examenMan) * d.data.examenKvinna)) +"%" )
             }
         })
         .merge(bars)
@@ -276,7 +276,7 @@ function plotChart(data, keys, speed) {
 
     tooltip.append("text")
         .attr("class", "secondLine")
-        .attr("x", 55)
+        .attr("x", 62)
         .attr("y", 25)
         .attr("dy", "1.2em")
         .style("text-anchor", "middle")
